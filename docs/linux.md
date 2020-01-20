@@ -107,6 +107,7 @@
 <h4>shell 判断文件夹或文件是否存在</h4>
 <ul>
   <li><a href="#14-0">文件夹不存在则创建</a></li>
+  <li><a href="#14-1">文件存在则删除</a></li>
 </ul>
 <h2>操作目录</h2>
 <div id="0-0"></div>
@@ -492,8 +493,11 @@ wget -m shici.xiange.tech
 <div id="14-0"></div>
 <h4>文件夹不存在则创建</h4>
 ``` sh
-if [ ! -d '/data/' ];then + 
- + mkdir /data + 
- + else + 
- echo '文件夹已经存在' fi
+if [ ! -d '/data/' ];then mkdir /data else echo '文件夹已经存在' fi
+```
+
+<div id="14-1"></div>
+<h4>文件存在则删除</h4>
+``` sh
+if [ ! -f '/data/filename' ];then echo '文件不存在' else rm -f /data/filename fi
 ```

@@ -323,8 +323,12 @@
       "title": "shell 判断文件夹或文件是否存在",
       "commands": [
         {
-          "command": "if [ ! -d '/data/' ];then + \n + mkdir /data + \n + else + \n echo '文件夹已经存在' fi",
+          "command": "if [ ! -d '/data/' ];then mkdir /data else echo '文件夹已经存在' fi",
           "title": "文件夹不存在则创建"
+        },
+        {
+          "command": "if [ ! -f '/data/filename' ];then echo '文件不存在' else rm -f /data/filename fi",
+          "title": "文件存在则删除"
         }
       ]
     }
