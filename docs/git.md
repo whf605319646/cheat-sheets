@@ -1,5 +1,5 @@
 
-<h1>Git Cheat Sheet</h1><a href="//shfshanyue.github.io/cheat-sheets/git">查看卡片式效果</a><br/>
+<h1>Git Cheat Sheet</h1><a href="//www.hfwang.win/cheat-sheets/git">查看卡片式效果</a><br/>
 <h2>目录</h2>
 <h4>初始化仓库</h4>
 <ul>
