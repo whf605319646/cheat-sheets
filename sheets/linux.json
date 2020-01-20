@@ -318,6 +318,15 @@
           "title": "整站下载"
         }
       ]
+    },
+    {
+      "title": "shell 判断文件夹或文件是否存在",
+      "commands": [
+        {
+          "command": "if [ ! -d '/data/' ];then + \n + mkdir /data + \n + else + \n echo '文件夹已经存在' fi",
+          "title": "文件夹不存在则创建"
+        }
+      ]
     }
   ]
 }

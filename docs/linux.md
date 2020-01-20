@@ -104,6 +104,10 @@
   <li><a href="#13-3">只打印响应头</a></li>
   <li><a href="#13-4">整站下载</a></li>
 </ul>
+<h4>shell 判断文件夹或文件是否存在</h4>
+<ul>
+  <li><a href="#14-0">文件夹不存在则创建</a></li>
+</ul>
 <h2>操作目录</h2>
 <div id="0-0"></div>
 <h4>进入最近离开目录</h4>
@@ -482,4 +486,14 @@ curl -I <url>
 <h4>整站下载</h4>
 ``` sh
 wget -m shici.xiange.tech
+```
+
+<h2>shell 判断文件夹或文件是否存在</h2>
+<div id="14-0"></div>
+<h4>文件夹不存在则创建</h4>
+``` sh
+if [ ! -d '/data/' ];then + 
+ + mkdir /data + 
+ + else + 
+ echo '文件夹已经存在' fi
 ```
